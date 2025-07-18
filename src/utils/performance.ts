@@ -184,7 +184,9 @@ export const measureWebVitals = () => {
     const observer = new PerformanceObserver((list) => {
       const entries = list.getEntries();
       entries.forEach((entry) => {
-        console.log('FID:', entry.processingStart - entry.startTime);
+        if ('processingStart' in entry) {
+          console.log('FID:', (entry as any).processingStart - entry.startTime);
+        }
       });
     });
     observer.observe({ entryTypes: ['first-input'] });

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import ContactForm from '@/components/ui/ContactForm';
 import ContactMethods from '@/components/ui/ContactMethods';
@@ -13,26 +13,6 @@ const Contact = () => {
     await new Promise(resolve => setTimeout(resolve, 2000));
   };
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-      },
-    },
-  };
 
   return (
     <section id="contact" className="section-padding bg-gray-50 dark:bg-dark-surface">

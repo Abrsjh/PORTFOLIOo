@@ -5,7 +5,6 @@ import { Volume2, VolumeX } from 'lucide-react';
 const SoundToggle = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
-  const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
     // Create a subtle ambient sound using Web Audio API

@@ -211,7 +211,7 @@ const About = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          {features.map((feature, index) => (
+          {features.map((feature) => (
             <motion.div
               key={feature.title}
               className="text-center group"

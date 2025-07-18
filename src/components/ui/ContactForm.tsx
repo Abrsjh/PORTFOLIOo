@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, CheckCircle, AlertCircle, User, Mail, MessageSquare, Briefcase, Calendar, DollarSign } from 'lucide-react';
 import { useForm } from 'react-hook-form';
